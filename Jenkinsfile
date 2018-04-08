@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('docker') {
       steps {
-        sh 'docker run node:6-alpine -p 3000:3000'
+        sh 'docker run -p 3000:3000 node:6-alpine '
       }
     }
     stage('build') {
