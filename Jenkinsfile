@@ -13,7 +13,7 @@ node:6-alpine '''
     }
     stage('build') {
       steps {
-        sh 'npm install'
+        sh 'sh npm install'
       }
     }
   }
